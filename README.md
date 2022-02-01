@@ -27,12 +27,10 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop](./screenshots/desktop.png)
-![Table](./screenshots/table.png)
-![Mobile](./screenshots/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-built-with-flexbox-grid-sass-and-bem-Q2C31U9eh](https://www.frontendmentor.io/solutions/responsive-landing-page-built-with-flexbox-grid-sass-and-bem-Q2C31U9eh)
 - Live Site URL: [https://fem-meeting-landing-page.vercel.app/](https://fem-meeting-landing-page.vercel.app/)
 
 ## My process
