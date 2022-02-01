@@ -1,10 +1,521 @@
-/* line 1, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+/* line 23, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* line 32, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 35, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+/* line 41, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 44, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 47, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* line 51, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.header__logo-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 3.125em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 51, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .header__logo-box {
+    margin-bottom: 4em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 60, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .header__img--tablet {
+    display: none;
+  }
+}
+
+/* line 65, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.header__img--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 65, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .header__img--desktop {
+    display: block;
+  }
+}
+
+/* line 71, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 71, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .header__content {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
+/* line 80, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.header__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  color: #87879d;
+  line-height: 26px;
+  margin-top: 3.125em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 80, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .header__intro {
+    margin-top: 4.88em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 80, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .header__intro {
+    margin-top: 4em;
+  }
+}
+
+/* line 96, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.header__title {
+  color: #28283d;
+  font-size: 2.5rem;
+  line-height: 44px;
+  margin-bottom: 0.75em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 96, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .header__title {
+    font-size: 3rem;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 96, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .header__title {
+    font-size: 4rem;
+    line-height: 64px;
+  }
+}
+
+/* line 109, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.header__title--main, .header__title--sub {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 114, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .header-info {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 114, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .header-info {
+    width: 90%;
+  }
+}
+
+/* line 122, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.header__btns-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2.187em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 122, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .header__btns-box {
+    flex-direction: row;
+  }
+}
+
+/* line 132, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.btn {
+  color: #fff;
+  border-radius: 100px;
+  display: block;
+  font-weight: 900;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+/* line 140, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.btn--download {
+  background-color: #4d96a9;
+  padding-right: 40px;
+  padding-left: 40px;
+  transition: background-color 0.8s ease-out;
+}
+
+/* line 145, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.btn--download:hover, .btn--download:focus {
+  background-color: #71c0d4;
+}
+
+/* line 150, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.btn--download-version {
+  color: #8fe3f9;
+  margin-left: 4px;
+}
+
+/* line 155, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.btn--info,
+.footer .btn--download {
+  background-color: #855fb1;
+  padding-right: 1.875em;
+  padding-left: 1.875em;
+  transition: background-color 0.8s ease-out;
+}
+
+/* line 162, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.footer .btn--download {
+  margin-top: 35px;
+}
+
+/* line 165, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.footer .btn--download-version {
+  color: #d9b8ff;
+}
+
+/* line 168, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.btn--info:hover,
+.btn--info:focus,
+.footer .btn--download:hover,
+.footer .btn--download:focus {
+  background-color: #b18bdd;
+}
+
+/* line 174, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.footer__btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 174, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .footer__btn-box {
+    justify-content: flex-end;
+  }
+}
+
+/* line 181, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.btn--info:active,
+.btn--download:active,
+.footer .btn--download:active {
+  animation: buttonPress 0.5s ease;
+  box-shadow: 0 1px 5px #c1c1d6;
+}
+
+/* line 187, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.main {
+  margin-bottom: 175px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 187, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .main {
+    margin-bottom: 199px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 193, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .main .text-box .text-box__title--main {
+    width: 75%;
+    margin: auto auto 1em auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 193, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .main .text-box .text-box__title--main {
+    width: 95%;
+  }
+}
+
+/* line 202, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.main .text-box .primary,
+.main .text-box .sub {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 202, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .main .text-box .primary,
+  .main .text-box .sub {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 192, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .main .text-box {
+    width: 88%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 192, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .main .text-box {
+    width: 38%;
+    margin: 0 auto;
+  }
+}
+
+/* line 219, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.section-identifier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 223, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.section-identifier--1 {
+  margin-top: 9.25em;
+  position: relative;
+  margin-bottom: 3.75em;
+}
+
+/* line 228, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.section-identifier--2 {
+  background-color: #fff;
+  position: absolute;
+  top: -30px;
+}
+
+/* line 234, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.section-identifier--1,
+.section-identifier--2 {
+  color: #87879d;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 100px;
+  padding: 20px;
+}
+
+/* line 241, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.section-identifier--1::before,
+.section-identifier--2::before {
+  content: "";
+  height: 84px;
+  width: 1px;
+  background-color: rgba(135, 135, 157, 0.25);
+  position: absolute;
+  top: -84px;
+  left: 50%;
+}
+
+/* line 252, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.56em;
+  margin-bottom: 4.375em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 252, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .images-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.69em;
+    margin-bottom: 3.44em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 252, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .images-grid {
+    gap: 1.875em;
+  }
+}
+
+/* line 266, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.images-grid__item {
+  border-radius: 10px;
+}
+
+/* line 270, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.text-box {
+  text-align: center;
+  color: #28283d;
+}
+
+/* line 273, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.text-box__info {
+  font-weight: 500;
+  color: #87879d;
+  line-height: 26px;
+}
+
+/* line 279, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.text-box__title--supplementary {
+  color: #4d96a9;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 2.187em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 279, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .text-box__title--supplementary {
+    margin-bottom: 1.56em;
+  }
+}
+
+/* line 288, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.text-box__title--main {
+  font-size: 2rem;
+  line-height: 36px;
+  margin-bottom: 1.09em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 288, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .text-box__title--main {
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 1em;
+  }
+}
+
+/* line 298, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.footer {
+  background-image: linear-gradient(to bottom, rgba(77, 150, 168, 0.85), rgba(77, 150, 168, 0.85)), url(../assets/mobile/image-footer.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 6.25em 0 4.5em;
+}
+
+/* line 310, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.footer .text-box__title--main {
+  color: #fafafa;
+}
+
+/* line 313, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.footer .text-box__info {
+  color: #fafafa;
+  font-size: 1.125rem;
+}
+
+/* line 317, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.footer .primary,
+.footer .sub {
+  display: block;
+}
+
+/* line 321, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+.footer .btn--download {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 298, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .footer {
+    background-image: linear-gradient(to bottom, rgba(77, 150, 168, 0.85), rgba(77, 150, 168, 0.85)), url(../assets/tablet/image-footer.jpg);
+  }
+  /* line 332, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .footer .container {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 298, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .footer {
+    background-image: linear-gradient(to bottom, rgba(77, 150, 168, 0.85), rgba(77, 150, 168, 0.85)), url(../assets/desktop/image-footer.jpg);
+  }
+  /* line 343, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .footer .text-box {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 350, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .footer .text-box__title--main {
+    margin: 0;
+  }
+  /* line 353, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .footer .btn--download {
+    margin-top: 0;
+  }
+  /* line 356, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .footer .text-box__title--main {
+    flex: 1.5;
+  }
+  /* line 359, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .footer .text-box__info {
+    flex: 1.15;
+  }
+  /* line 362, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .footer .footer__btn-box {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 368, ../../../../../Users/clairecalder/Documents/GitHub/FEM-Meeting-Landing-Page/scss/style.scss */
+  .section-identifier--1 {
+    margin-top: 10.25em;
+    margin-bottom: 4.19em;
+  }
+}
+
+@keyframes buttonPress {
+  from {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
